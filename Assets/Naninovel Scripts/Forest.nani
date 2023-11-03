@@ -1,0 +1,44 @@
+@hideAll
+@back Forest
+@showUI MapButton wait:false
+@if logAvailable
+	@showUI LogButton
+@endif
+@set mapAvailable=false
+
+# Default
+
+@if forestAvailable=false
+	{name}: There's nothing left for me to do in this forest.
+	@goto Map
+@endif
+
+@if hasToFindItem
+	@showUI WaterInteractive
+	@if hasItem=false
+		{name}: I don't know how but... I'm sensing it!
+		{name}: The ring is here somewhere.  
+		{name}: But where exactly could it be?
+		@hidePrinter 
+		@goto .Stop
+	@endif
+
+	@if hasItem=true
+		@hideUI WaterInteractive
+		{name}: Found it! Somebody must have dropped it while leaving the city.
+		{name}: Or maybe they didn't want it to be found.
+		{name}: I hope Isolde will shed some light on this.
+		@set forestAvailable=false
+		@set hasToFindItem=false
+		@set objective="{T_Objective3}"
+		@hidePrinter
+		@showUI MapButton
+		@goto .Stop
+	@endif
+@endif
+
+# Stop
+
+@set mapAvailable=true
+
+@stop

@@ -1,0 +1,71 @@
+; English <en> to Russian <ru> localization document for `DefaultUI` managed text document
+
+CGGallery.Title: CG ГАЛЕРЕЯ
+Confirmation.No: НЕТ
+Confirmation.Yes: ДА
+ControlPanel.Auto: АВТО
+ControlPanel.Hide: СКРЫТЬ
+ControlPanel.Load: ЗАГРУЗИТЬ
+ControlPanel.Log: ЖУРНАЛ
+ControlPanel.QuickLoad: БЫСТРАЯ ЗАГРУЗКА
+ControlPanel.QuickSave: БЫСТРОЕ СОХРАНЕНИЕ
+ControlPanel.Save: СОХРАНИТЬ
+ControlPanel.Settings: НАСТРОЙКИ
+ControlPanel.Skip: ПРОПУСК
+ControlPanel.Tips: ПОДСКАЗКИ
+ControlPanel.Title: ЗАГОЛОВОК
+ExternalScriptsBrowser.Info: Выберите сценарий для игры
+ExternalScriptsBrowser.Title: ВНЕШНИЕ СЦЕНАРИИ
+General.Close: ЗАКРЫТЬ
+General.Return: ВЕРНУТЬСЯ
+Naninovel.UI.ControlPanelTitleButton.ConfirmationMessage: Вы уверены, что хотите вернуться на главный экран?\nВесь несохраненный прогресс будет потерян.
+Naninovel.UI.GameSettingsFontDropdown.DefaultFontName: По умолчанию
+Naninovel.UI.GameSettingsFontSizeDropdown.Default: По умолчанию
+Naninovel.UI.GameSettingsFontSizeDropdown.ExtraLarge: Очень большой
+Naninovel.UI.GameSettingsFontSizeDropdown.Large: Большой
+Naninovel.UI.GameSettingsFontSizeDropdown.Small: Маленький
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption1: Очень низкое
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption2: Низкое
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption3: Среднее
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption4: Высокое
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption5: Очень высокое
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption6: Ультра
+Naninovel.UI.GameSettingsScreenModeDropdown.ExclusiveFullScreen: Полноэкранный
+Naninovel.UI.GameSettingsScreenModeDropdown.FullScreenWindow: Окно полноэкранного режима
+Naninovel.UI.GameSettingsScreenModeDropdown.MaximizedWindow: Развернутое окно
+Naninovel.UI.GameSettingsScreenModeDropdown.Windowed: Оконный режим
+Naninovel.UI.GameSettingsSkipModeDropdown.Everything: Все
+Naninovel.UI.GameSettingsSkipModeDropdown.ReadOnly: Только чтение
+Naninovel.UI.GameStateSlot.EmptySlotLabel: Пусто
+Naninovel.UI.SaveLoadMenu.DeleteSaveSlotMessage: Вы уверены, что хотите удалить сохраненный слот?
+Naninovel.UI.SaveLoadMenu.OverwriteSaveSlotMessage: Вы уверены, что хотите перезаписать сохраненный слот?
+SaveLoadMenu.Tab.Load: ЗАГРУЗИТЬ
+SaveLoadMenu.Tab.QuickLoad: БЫСТРАЯ ЗАГРУЗКА
+SaveLoadMenu.Tab.Save: СОХРАНИТЬ
+SettingsMenu.AutoDelay: Задержка автоматического режима:
+SettingsMenu.Font: Шрифт:
+SettingsMenu.FontSize: Размер шрифта:
+SettingsMenu.Graphics: Графика:
+SettingsMenu.Language: Язык:
+SettingsMenu.MessageSpeed: Скорость сообщений:
+SettingsMenu.Preview: Предварительный просмотр
+SettingsMenu.PreviewText: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis vitae tellus a pharetra. Aenean vitae ipsum in est lobortis vulputate a blandit ipsum. Nullam in felis purus.
+SettingsMenu.Resolution: Разрешение:
+SettingsMenu.ScreenMode: Режим экрана:
+SettingsMenu.SkipMode: Режим пропуска:
+SettingsMenu.Tab.Basic: ОСНОВНОЕ
+SettingsMenu.Tab.Sound: ЗВУК
+SettingsMenu.Tab.Text: ТЕКСТ
+SettingsMenu.VoiceLanguage: Язык озвучки:
+SettingsMenu.VolumeEffects: Громкость эффектов:
+SettingsMenu.VolumeMaster: Громкость мастера:
+SettingsMenu.VolumeMusic: Громкость музыки:
+SettingsMenu.VolumeVoice: Громкость голоса:
+TitleMenu.CGGallery: CG ГАЛЕРЕЯ
+TitleMenu.Continue: ПРОДОЛЖИТЬ
+TitleMenu.Exit: ВЫХОД
+TitleMenu.ExternalScripts: ВНЕШНИЕ СЦЕНАРИИ
+TitleMenu.NewGame: НОВАЯ ИГРА
+TitleMenu.Settings: НАСТРОЙКИ
+TitleMenu.Tips: ПОДСКАЗКИ
+VariableInput.Submit: ОТПРАВИТЬ

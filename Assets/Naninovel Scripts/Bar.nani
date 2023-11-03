@@ -1,0 +1,145 @@
+@hideAll time:1
+@set mapAvailable=false
+@if firstTimer=false 
+	@showUI MapButton wait:false
+	@if logAvailable
+		@showUI LogButton
+	@endif	
+@endif
+@back Bar
+
+;@showUI InvButton
+
+@if firstTimer=true
+
+	@set firstTimer=false
+	@set objective="Welcome"
+	@char Juliet
+	Juliet: Hi handsome. Name's Juliet. Mind if I join you?
+
+	{name}: Oh... Sure... Juliet.
+
+	Juliet:  You come here often? It's not every day I see someone as intriguing as you.
+
+	{name}: Not really, just arrived in the city. You seem... welcoming
+
+	Juliet: I have a taste for fresh blood, you could say.
+	Juliet: I mean, the company of interesting people.
+
+	{name}: Any plans for the night ahead?
+
+	Juliet: Don't push too hard, sweetie. Go take a walk around town and maybe think of something more interesting to tell me.
+
+	@set hasToExploreTheCity=true
+	@set objective="{T_Objective1}"
+	@hidePrinter
+
+	@set mapAvailable=true
+	@showUI MapButton wait:false
+	@showUI LogButton
+	
+
+	@goto .Stop
+
+@endif
+
+@if questCompleted
+	@char Juliet
+	@if itemGivenTo="Juliet"
+		Juliet: Oh, {name}, my love, how are doing?
+		Juliet: And, more importantly, why are you not doing anyhting with me?
+	@endif
+	@if itemGivenTo!="Juliet"
+		Juliet: Came to see my crying? No luck, because I'm doing just fine. Now get out of here, or I'll tell the staff that you're uderage.
+	@endif
+
+@endif
+
+@if isoldeMissing
+	@set isoldeMissing=false
+
+	@char Isolde
+	@char Juliet
+	Juliet: I haven't seen your stupid ring, Isolde. Get away from me!
+	Isolde: You're lying'! Tell me where it is!!!
+	{name}: Uhm, ladies?
+	Isolde: {name}! I... Oh, hold on. I can feel it. Did you find the ring?
+	{name}: Yeah, it's here but...
+	Juliet: What? Don't you dare give it to her. You have no idea what might happen!
+	Isolde: Don't listen to her, dear.
+	Juliet: Look, just give it to me. I'll make sure to reward you.
+	Isolde: {name}, don't be stupid. It's mine and it's me who needs it. Give the ring to me and I'll show you how grateful a woman can be.
+
+	@choice "Give it to Isolde" set:itemGivenTo="Isolde"
+	@choice "Give it to Juliet" set:itemGivenTo="Juliet"
+	@choice "Keep it to yourself" set:itemGivenTo="Self" 
+	@stop
+
+	@set questCompleted=true
+	@set objective="{T_Objective5}"
+	@hideUI LogButton
+	@set logAvailable=false
+	@hideUI LogScreen
+
+	@if itemGivenTo="Isolde"
+		@set hasItem=false
+		Isolde: Thank you. Come see me at the usual spot when you're done here.
+		@hide Isolde
+		Juliet: You're an idiot!
+		{name}: I'm sorry, I wish I could give it to you both...
+		Juliet: Huh? Get out of my face!
+	@endif
+
+	@if itemGivenTo="Juliet"
+		@set hasItem=false
+		Juliet: Oh, you're so sweet...
+		Isolde: Sweet?! You'll regret this. Both of you!
+		@hide Isolde
+		Juliet: Good riddance. Now we can get to know each other better, don't you think?
+	@endif
+
+	@if itemGivenTo="Self"
+		{name}: I'm sorry, but I'm keeping it.
+		Isolde: What?!
+		Juliet: What?!
+		Isolde: That's the worst possible decision you could ever make, {name}.
+		@hide Isolde
+		Juliet: It could've been so diffrent. And yet it's the way it is. Disgusting.
+
+	@endif
+
+@endif 
+
+@if hasToFindItem=true
+	@if hasItem=false
+		@set julietBusy=true
+	@endif
+@endif	
+
+@if hasItem=true
+@if questCompleted=false
+@if isoldeMissing=false
+	@set julietBusy=true
+@endif
+@endif
+@endif
+
+@if firstTimer=false
+@if hasItem=false
+@if hasToFindItem=false
+@if questCompleted=false
+	@set julietBusy=true
+@endif	
+@endif
+@endif	
+@endif
+
+@if julietBusy=true
+	@char Juliet time:1
+	Juliet: Honey, I'm a bit busy at the moment. You've got your own business to attend to, right?
+@endif
+
+# Stop
+@set mapAvailable=true
+
+@stop 

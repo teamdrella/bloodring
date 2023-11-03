@@ -1,0 +1,29 @@
+; English <en> to Russian <ru> localization document for `Forest` naninovel script
+
+# b0fcecb1
+; 	{name}: There's nothing left for me to do in this forest.
+	{name}: В этом лесу мне больше нечего делать.
+
+# bf8af9d2
+; 		{name}: I don't know how but... I'm sensing it!
+		{name}: Не знаю как, но... я чувствую это!
+
+# 72f0bcfd
+; 		{name}: The ring is here somewhere.  
+		{name}: Кольцо где-то здесь.  
+
+# e1814ae4
+; 		{name}: But where exactly could it be?
+		{name}: Но где именно?
+
+# a7b32690
+; 		{name}: Found it! Somebody must have dropped it while leaving the city.
+		{name}: Нашел! Кто-то должно было потерять его, уходя из города.
+
+# c015642d
+; 		{name}: Or maybe they didn't want it to be found.
+		{name}: Или, может быть, они не хотели, чтобы его нашли.
+
+# 623c5bdc
+; 		{name}: I hope Isolde will shed some light on this.
+		{name}: Надеюсь, Изольда прольет свет на это.

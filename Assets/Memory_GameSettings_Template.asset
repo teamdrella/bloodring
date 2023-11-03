@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 978331dd1a6f3a048b8c621b8c47ef7f, type: 3}
+  m_Name: Memory_GameSettings_Template
+  m_EditorClassIdentifier: 
+  _shuffleAlgorithm: 0
+  _alignLastRow: 1
+  _cardMode: 0
+  _amountOfCards: 6
+  _boardMode: 0
+  _cardsOnBoardLimit: 4
+  _refillAtFoundPercentage: 100
+  _cardAnimationSpeed: 1
+  _cardBacks:
+  - {fileID: 21300000, guid: 2b2360253c0ca154292a0129d2bf6f90, type: 3}
+  _cardSprites:
+  - {fileID: 21300000, guid: da31138dbe5c2694482a304ba228f6c9, type: 3}
+  - {fileID: 21300000, guid: 946c197006ac93746be1c8a9ec986cf5, type: 3}
+  - {fileID: 21300000, guid: 2c7d744f21393be47993de2ff73ec2d8, type: 3}

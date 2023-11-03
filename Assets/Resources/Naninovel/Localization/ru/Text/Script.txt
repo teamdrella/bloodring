@@ -1,0 +1,7 @@
+; English <en> to Russian <ru> localization document for `Script` managed text document
+
+T_Objective1: Исследуйте город
+T_Objective2: Найдите кольцо
+T_Objective3: Отнесите кольцо Изольде
+T_Objective4: Найдите Изольду
+T_Objective5: Все задания выполнены

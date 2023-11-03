@@ -1,0 +1,147 @@
+; English <en> to Russian <ru> localization document for `Bar` naninovel script
+
+# 581146de
+; 	Juliet: Hi handsome. Name's Juliet. Mind if I join you?
+	Juliet: Привет, красавчик. Меня зовут Джульетта. Тебе не мешает, если я к тебе присоединюсь?
+
+# 8a2c79c2
+; 	{name}: Oh... Sure... Juliet.
+	{name}: Ох... Конечно... Джульетта.
+
+# 2802c1a9
+; 	Juliet:  You come here often? It's not every day I see someone as intriguing as you.
+	Juliet: Ты часто бываешь здесь? Не каждый день я вижу кого-то такого интригующего, как ты.
+
+# be522c9
+; 	{name}: Not really, just arrived in the city. You seem... welcoming
+	{name}: Не совсем, только что приехал в город. Ты кажешься... гостеприимной.
+
+# 8278e5a3
+; 	Juliet: I have a taste for fresh blood, you could say.
+	Juliet: У меня есть вкус к свежей крови, можно сказать.
+
+# 655f6119
+; 	Juliet: I mean, the company of interesting people.
+	Juliet: Я имею в виду, к обществу интересных людей.
+
+# 697ec779
+; 	{name}: Any plans for the night ahead?
+	{name}: У тебя есть планы на эту ночь?
+
+# 482e9452
+; 	Juliet: Don't push too hard, sweetie. Go take a walk around town and maybe think of something more interesting to tell me.
+	Juliet: Не надо так сильно настаивать, дорогой. Прогуляйся по городу и, может быть, придумаешь что-то более интересное, чтобы рассказать мне.
+
+# 1bc7d370
+; 		Juliet: Oh, {name}, my love, how are doing?
+		Juliet: О, {name}, моя любовь, как ты?
+
+# 322b5553
+; 		Juliet: And, more importantly, why are you not doing anyhting with me?
+		Juliet: А главное, почему ты ничего не предпринимаешь со мной?
+
+# a1455689
+; 		Juliet: Came to see my crying? No luck, because I'm doing just fine. Now get out of here, or I'll tell the staff that you're uderage.
+		Juliet: Пришел посмотреть, как я плачу? Ты не повезло, потому что у меня все в порядке. Теперь убирайся, или я скажу персоналу, что ты несовершеннолетний.
+
+# 15351b0a
+; 	Juliet: I haven't seen your stupid ring, Isolde. Get away from me!
+	Juliet: Я не видел твоего глупого кольца, Изольда. Удаляйся от меня!
+
+# e439bff5
+; 	Isolde: You're lying'! Tell me where it is!!!
+	Isolde: Ты лжешь! Скажи мне, где оно?
+
+# 29a5eda7
+; 	{name}: Uhm, ladies?
+	{name}: Ээ, дамы?
+
+# 34249a94
+; 	Isolde: {name}! I... Oh, hold on. I can feel it. Did you find the ring?
+	Isolde: {name}! Я... Ой, подожди. Я чувствую его. Ты нашел кольцо?
+
+# 3b12718b
+; 	{name}: Yeah, it's here but...
+	{name}: Да, оно здесь, но...
+
+# e4ce68dc
+; 	Juliet: What? Don't you dare give it to her. You have no idea what might happen!
+	Juliet: Что? Не смей отдавать его ей. Ты не представляешь, что может случиться!
+
+# 1a02ff7
+; 	Isolde: Don't listen to her, dear.
+	Isolde: Не слушай ее, дорогой.
+
+# 5624b0a3
+; 	Juliet: Look, just give it to me. I'll make sure to reward you.
+	Juliet: Посмотри, просто отдай его мне. Я обязательно вознагражу тебя.
+
+# 743f9bf0
+; 	Isolde: {name}, don't be stupid. It's mine and it's me who needs it. Give the ring to me and I'll show you how grateful a woman can be.
+	Isolde: {name}, не будь глупцом. Оно мое, и мне оно нужно. Отдай мне кольцо, и я покажу тебе, насколько благодарной может быть женщина.
+
+# 8705ab0c
+; 	@choice "Give it to Isolde" set:itemGivenTo="Isolde"
+	@choice "Дать Изольде" set:itemGivenTo="Isolde"
+
+# 306ceb14
+; 	@choice "Give it to Juliet" set:itemGivenTo="Juliet"
+	@choice "Дать Джульетте" set:itemGivenTo="Juliet"
+
+# cffe4745
+; 	@choice "Keep it to yourself" set:itemGivenTo="Self" 
+	@choice "Оставить себе" set:itemGivenTo="Self" 
+
+# 8af09323
+; 		Isolde: Thank you. Come see me at the usual spot when you're done here.
+
+# 29cbcbd8
+; 		Juliet: You're an idiot!
+		Juliet: Ты идиот!
+
+# d0e2d9fe
+; 		{name}: I'm sorry, I wish I could give it to you both...
+		{name}: Извини, я бы хотел дать вам обоим...
+
+# 7fbeae3d
+; 		Juliet: Huh? Get out of my face!
+		Juliet: Что? Уйди из моего лица!
+
+# 2537b750
+; 		Juliet: Oh, you're so sweet...
+		Juliet: О, ты такой милый...
+
+# 9f8313e5
+; 		Isolde: Sweet?! You'll regret this. Both of you!
+		Isolde: Милый?! Ты пожалеешь об этом. Обоим вас!
+
+# ba14e17e
+; 		Juliet: Good riddance. Now we can get to know each other better, don't you think?
+		Juliet: Наконец-то избавился. Теперь мы можем поближе познакомиться, не так ли?
+
+# 38c68dbd
+; 		{name}: I'm sorry, but I'm keeping it.
+		{name}: Извини, но я оставляю его себе.
+
+# 10963e2e
+; 		Isolde: What?!
+		Isolde: Что?!
+
+# 6334bf9c
+; 		Juliet: What?!
+		Juliet: Что?!
+
+# 52203900
+; 		Isolde: That's the worst possible decision you could ever make, {name}.
+		Isolde: Это худшее решение, которое ты мог принять, {name}.
+
+# 223c2d0c
+; 		Juliet: It could've been so diffrent. And yet it's the way it is. Disgusting.
+		Juliet: Все могло бы быть по-другому. А так, как есть, просто отвратительно.
+
+# 61afa318
+; 	Juliet: Honey, I'm a bit busy at the moment. You've got your own business to attend to, right?
+	Juliet: Дорогой, я сейчас немного занят. У тебя свои дела, верно?
+
+# 70c0d6e3
+; @stop 

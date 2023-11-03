@@ -1,0 +1,4 @@
+@input name summary:"Choose your name."
+@stop
+
+@goto Bar

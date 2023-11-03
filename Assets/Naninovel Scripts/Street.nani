@@ -1,0 +1,103 @@
+@back Street
+
+@set mapAvailable=false
+@showUI MapButton wait:false
+@if logAvailable
+	@showUI LogButton
+@endif
+
+# First
+
+@if questCompleted
+	@char Isolde
+	@if itemGivenTo="Isolde"
+		Isolde: Please tell me you were thinking about me.
+		Isolde: Or should we do something unforgettable first?
+	@endif
+	
+	@if itemGivenTo!="Isolde"
+		Isolde: Don't you dare talking to me. I trusted you!
+		Isolde: And now I don't. Get lost.
+	@endif	
+	@goto .Stop
+@endif
+
+@if hasToFindItem=false 
+	@if hasItem=true
+		{name}: Where is she?!
+		@set isoldeMissing=true
+		@set objective="{T_Objective4}"
+		@set julietBusy=false
+		@hidePrinter
+		@goto .Stop
+	@endif
+
+	@if clearedMinigame=false
+		@char Isolde
+		Isolde: Hey you!
+		{name}: Me?
+
+		Isolde: Yeah, you. What's your name?
+
+		{name}: {name}. And yours?
+
+		Isolde: Isolde.  
+
+		{name}: *I'm not sure I like the way she looks at me, almost as if...*
+
+		Isolde: You appear just in time. Strange. Almost like a test.
+
+		{name}: What are you talking about?
+
+		Juliet: Would be easier if you could read my mind.
+
+		{name}: *How does she... Okay, quick spell before she realizes who I am* 
+		
+		@hidePrinter
+		@hide Isolde
+		@minigame	
+	@endif
+
+	@if clearedMinigame=true
+		@char Isolde
+		Isolde: Ugh, I don't think I have much choice anyway.
+
+		Isolde: I'm looking for something... a golden ring. It's of great importance to me.
+
+		{name}: Why do you need it, and how can I help?
+
+		Isolde: I can't explain everything right now. But I need someone discreet, someone who won't ask too many questions.
+
+		{name}: I'm a good listener, and I'm willing to help. Tell me what you can.
+
+		Isolde: Thank you. I sense it's nearby, but I can't pinpoint its exact location. Can you assist me in finding it?
+
+		{name}: Of course, I'll do my best to help. Let's start by searching the area.
+
+		Isolde: It's not too close, it's just... Uh, nevermind.
+
+		{name}: Alright, I'll see if I can find it.
+
+		@set hasToExploreTheCity=false
+		@set hasToFindItem=true
+		@set objective="{T_Objective2}"
+		@hidePrinter
+		
+		@goto .Stop
+	@endif
+
+@endif
+
+@if hasToFindItem=true
+	@if hasItem=false
+		@char Isolde
+		Isolde: What are you waiting for? Keep looking for the ring.
+	@endif
+	
+@endif
+
+# Stop
+
+@set mapAvailable=true
+
+@stop

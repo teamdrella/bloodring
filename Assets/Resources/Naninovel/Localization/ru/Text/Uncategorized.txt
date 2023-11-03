@@ -1,0 +1,8 @@
+; English <en> to Russian <ru> localization document for `Uncategorized` managed text document
+
+CustomUI.LogButton: Квест
+CustomUI.LogTitle: Текущая цель
+CustomUI.MapButton: Карта
+Locations.Bar: Бар
+Locations.Forest: Лес
+Locations.TownSquare: Площадь

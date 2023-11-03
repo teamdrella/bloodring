@@ -1,0 +1,12 @@
+# Default
+
+@hideAll time:1
+
+@if logAvailable
+	@showUI LogButton time:0
+@endif
+@showUI MapUI
+
+
+
+@stop

@@ -1,0 +1,6 @@
+CustomUI.LogButton: Quest
+CustomUI.LogTitle: Current objective
+CustomUI.MapButton: Map
+Locations.Bar: Bar
+Locations.Forest: Forest
+Locations.TownSquare: Town Square

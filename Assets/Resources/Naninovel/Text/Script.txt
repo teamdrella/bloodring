@@ -1,0 +1,5 @@
+T_Objective1: Explore the city
+T_Objective2: Find the ring
+T_Objective3: Return to Isolde with the ring
+T_Objective4: Find Isolde
+T_Objective5: Quest completed
